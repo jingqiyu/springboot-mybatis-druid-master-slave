@@ -1,0 +1,20 @@
+druid:
+    type: com.alibaba.druid.pool.DruidDataSource
+    master:
+        url: jdbc:mysql://192.168.239.129:3306/test?characterEncoding=UTF-8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&useUnicode=true
+        driver-class-name: com.mysql.jdbc.Driver
+        username: root
+        password: 000000
+        initial-size: 5
+        min-idle: 1
+        max-active: 100
+        test-on-borrow: true
+    slave:
+        url: jdbc:mysql://192.168.239.129:3306/test?characterEncoding=UTF-8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&useUnicode=true
+        driver-class-name: com.mysql.jdbc.Driver
+        username: root
+        password: 000000
+        initial-size: 5
+        min-idle: 1
+        max-active: 100
+        test-on-borrow: true
